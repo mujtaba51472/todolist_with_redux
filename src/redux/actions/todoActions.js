@@ -1,13 +1,11 @@
 export const addtodo = (todo) => {
-    if(todo.todo){
-        return {
-            type: "ADD_TODO",
-            payload: todo,
-          };
-        };
-
-    }
- 
+  if (todo.todo) {
+    return {
+      type: "ADD_TODO",
+      payload: todo,
+    };
+  }
+};
 
 // remove  todo action
 export const removeTodo = (id) => {
@@ -23,4 +21,8 @@ export const removeAll = () => {
   };
 };
 
-
+export const editTodo = (id, payload) => ({
+  type: "edit ma todo b*tch!",
+  payload,
+  id,
+});
